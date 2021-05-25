@@ -70,7 +70,7 @@
                             <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Londres, UK</p>
                         </div>
 
-                        <h1 class="nombre-sitio">WWDCfskjfdjkh</h1>
+                        <h1 class="nombre-sitio">WWDC</h1>
                         <p class="slogan">Únete a la mayor conferencia de desarrolladores</p>
                     </div> <!--.informacion-evento-->
                 </div>
