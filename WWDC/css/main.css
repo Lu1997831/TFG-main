@@ -654,8 +654,11 @@ div.contador {
 }
 
 div.contador::before {
-    background-image: url(../img/bg-resumen.jpg);
+    background-image: url(../img/wwdc1.jpg);
     content: '';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.5;
 }
 
 ul.resumen-evento {
