@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 04-12-2020 a las 00:12:07
+-- Tiempo de generación: 04-12-2018 a las 00:12:07
 -- Versión del servidor: 5.6.35
 -- Versión de PHP: 7.1.6
 
@@ -132,11 +132,11 @@ CREATE TABLE `invitados` (
 
 INSERT INTO `invitados` (`invitado_id`, `nombre_invitado`, `apellido_invitado`, `descripcion`, `url_imagen`, `editado`) VALUES
 (1, 'Tim ', 'Cook', 'He is the CEO of Apple', 'tim.jpg', '0000-00-00 00:00:00'),
-(2, 'Shari', 'Herrera', 'Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.', 'invitado2.jpg', '0000-00-00 00:00:00'),
-(3, 'Gregorio', 'Sanchez', 'placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.', 'invitado3.jpg', '0000-00-00 00:00:00'),
-(4, 'Susana', 'Rivera', 'Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus', 'invitado4.jpg', '0000-00-00 00:00:00'),
-(5, 'Harold', 'Garcia', 'placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.', 'invitado5.jpg', '0000-00-00 00:00:00'),
-(6, 'Susan', 'Sanchez', 'Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.', 'invitado6.jpg', '0000-00-00 00:00:00'),
+(2, 'Craig', 'Federighi', 'iOS software executive chief', 'craig.jpg', '0000-00-00 00:00:00'),
+(3, 'Jony', 'Ive', 'Chief executive design', 'jony.jpg', '0000-00-00 00:00:00'),
+(4, 'Jorge', 'Garcia', 'iOS software developer', 'jorge.jpg', '0000-00-00 00:00:00'),
+(5, 'Roberto', 'Arias', 'watchOS software developer', 'robert.jpg', '0000-00-00 00:00:00'),
+(6, 'Lu', 'Liang', 'macOS software developer', 'lu.jpg', '0000-00-00 00:00:00'),
 (7, 'Juan Pablo', 'De la torre', '1o2i12', 'Captura de pantalla 2018-10-22 a la(s) 13.28.50.pn', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------

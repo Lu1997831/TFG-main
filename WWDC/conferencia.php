@@ -2,8 +2,7 @@
 
         <section class="seccion contenedor">
             <h2>La mejor conferencia  de diseño web en español</h2>
-            <p>
-              Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.
+            <p>Los mejores programas tienen una curva de aprendizaje rápida, un precio asequible e incluyen herramientas necesarias para realizar reuniones productivas. Para ayudarte a encontrar la correcta, indagamos en estas opciones, teniendo en cuenta factores como el precio, la experiencia de usuario y la cantidad de participantes permitidos en cada reunión.
             </p>
         </section> <!--seccion-->
 

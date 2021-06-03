@@ -2,8 +2,7 @@
 
         <section class="seccion contenedor">
             <h2>La mejor conferencia  de diseño web en español</h2>
-            <p>
-              Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.
+            <p>La llegada de la emergencia sanitaria al panorama mundial generó un incremento importante del trabajo remoto. Ha hecho de los programas de videoconferencia una herramienta necesaria para muchas empresas, y no solo para estas, sino también para conectarnos a nivel personal con nuestros seres queridos. 
             </p>
         </section> <!--seccion-->
 

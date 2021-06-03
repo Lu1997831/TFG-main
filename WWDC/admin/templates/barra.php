@@ -26,15 +26,7 @@
                   <?php $usuario = $_SESSION['usuario']; ?>
                   <span class="hidden-xs"><?php echo $usuario; ?></span>
                 </a>
-                <ul class="dropdown-menu">
-                    <!-- User image -->
-                    <li class="user-header">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
-                        <p>
-                          Juan Pablo De la torre Valdez
-                        </p>
-                    </li>
+            
                     <!-- Menu Footer-->
                     <li class="user-footer">
                         <div class="pull-left">

@@ -2,7 +2,7 @@
     <div class="contenedor clearfix">
           <div class="footer-informacion">
               <h3>Sobre <span>WWDC</span></h3>
-              <p>Praesent rutrum efficitur pharetra. Vivamus scelerisque pretium velit, id tempor turpis pulvinar et. Ut bibendum finibus massa non molestie. Curabitur urna metus, placerat gravida lacus ut, lacinia congue orci. Maecenas luctus mi at ex blandit vehicula. Morbi porttitor tempus euismod.</p>
+              <p>La Conferencia Mundial de Desarrolladores,2​ en inglés Worldwide Developers Conference (WWDC), es una conferencia que se celebra anualmente desde el año 1983 en California (EE. UU.) por Apple Inc. En estas conferencias suele mostrar su nuevo software, hardware y tecnologías orientadas a los desarrolladores de software.</p>
           </div>
           <div class="ultimos-tweets">
               <h3>Últimos <span>tweets</span></h3>
