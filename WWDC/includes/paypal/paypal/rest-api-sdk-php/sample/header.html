@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,38 +15,53 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         body {
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: "montserrat", Helvetica, Arial, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
+        
         pre {
             overflow-y: auto;
             overflow-wrap: normal;
         }
-        pre.error, div.error, p.error {
+        
+        pre.error,
+        div.error,
+        p.error {
             border-color: red;
             color: red;
             overflow-y: visible;
             overflow-wrap: break-word;
         }
+        
         .panel-default>.panel-heading.error {
             background-color: red;
             color: white;
         }
-        .panel-title a, .home{
-            font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+        
+        .panel-title a,
+        .home {
+            font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
         }
-        h1.error, h2.error, h3.error, h4.error, h5.error {
+        
+        h1.error,
+        h2.error,
+        h3.error,
+        h4.error,
+        h5.error {
             color: red;
         }
+        
         .panel-default>.panel-heading {
             color: #FFF;
             background-color: #428bca;
             border-color: #428bca;
         }
+        
         .row {
             margin-right: 0px;
             margin-left: 0px;
         }
+        
         .header {
             background: #fff url("https://www.paypalobjects.com/webstatic/developer/banners/Braintree_desktop_BG_2X.jpg") no-repeat top right;
             -webkit-background-size: cover;
@@ -55,22 +70,26 @@
             background-size: cover;
             color: #EEE;
         }
-        .header a:link, .header a:visited, .header a:hover, .header a:active {
+        
+        .header a:link,
+        .header a:visited,
+        .header a:hover,
+        .header a:active {
             text-decoration: none;
-
         }
         /* Sticky footer styles
 -------------------------------------------------- */
+        
         html {
             position: relative;
             min-height: 100%;
         }
-
+        
         body {
             /* Margin bottom by footer height */
             margin-bottom: 60px;
         }
-
+        
         .footer {
             position: absolute;
             bottom: 0;
@@ -79,22 +98,42 @@
             min-height: 60px;
             padding-top: 15px;
         }
-        .footer .footer-links, .footer .footer-links li {
+        
+        .footer .footer-links,
+        .footer .footer-links li {
             display: inline-block;
             padding: 5px 8px;
             font-size: 110%;
         }
+        
         .footer a {
             text-decoration: none;
         }
-
-        .string { color: #428bca; }
-        .number { color: darkorange; }
-        .boolean { color: blue; }
-        .null { color: magenta; }
-        .key { color: slategray; font-weight: bold; }
-        .id { color: red; }
-
+        
+        .string {
+            color: #428bca;
+        }
+        
+        .number {
+            color: darkorange;
+        }
+        
+        .boolean {
+            color: blue;
+        }
+        
+        .null {
+            color: magenta;
+        }
+        
+        .key {
+            color: slategray;
+            font-weight: bold;
+        }
+        
+        .id {
+            color: red;
+        }
     </style>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -106,7 +145,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/scrollspy.min.js"></script>
     <script>
-        $( document ).ready(function() {
+        $(document).ready(function() {
             $("#accordion .panel-collapse:last").collapse('toggle');
 
             $(document.body).append('<footer class="footer"> <div class="container"> <div class="footer-div"> <ul class="footer-links"> <li> <a href="http://paypal.github.io/PayPal-PHP-SDK/" target="_blank"><i class="fa fa-github"></i> PayPal PHP SDK</a></li><li> <a href="https://developer.paypal.com/webapps/developer/docs/api/" target="_blank"><i class="fa fa-book"></i> REST API Reference</a> </li><li> <a href="https://github.com/paypal/PayPal-PHP-SDK/issues" target="_blank"><i class="fa fa-exclamation-triangle"></i> Report Issues </a> </li></ul> </div></div></footer>');
@@ -122,7 +161,7 @@
         /* http://stackoverflow.com/questions/4810841/how-can-i-pretty-print-json-using-javascript */
         function syntaxHighlight(json) {
             json = json.replace(/&/g, '&').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function (match) {
+            return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, function(match) {
                 var cls = 'number';
                 if (/^"/.test(match)) {
                     if (/:$/.test(match)) {
@@ -144,4 +183,5 @@
         }
     </script>
 </head>
+
 <body>

@@ -116,7 +116,7 @@ html {
 
 body {
     background-color: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 
@@ -839,8 +839,10 @@ div.newsletter {
 }
 
 div.newsletter::before {
-    background-image: url(../img/bg-newsletter.jpg);
+    background-image: url(../img/newsletter.jpg);
     content: '';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 div.newsletter .contenido {

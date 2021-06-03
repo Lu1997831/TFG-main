@@ -116,7 +116,7 @@ html {
 
 body {
     background-color: #f2f2f2;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 
@@ -156,7 +156,7 @@ body {
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 2.4em;
     text-transform: uppercase;
     text-align: center;
@@ -174,7 +174,7 @@ h2::after {
 h3 {
     font-size: 1.8em;
     color: #fe4918;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'montserrat', sans-serif;
     margin: 0;
 }
 
@@ -184,7 +184,7 @@ h3 {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     text-decoration: none;
     font-size: 1em;
     margin-top: 20px;
@@ -352,7 +352,7 @@ p.slogan span {
 h1.nombre-sitio {
     font-size: 5.9vw;
     text-transform: uppercase;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 @media only screen and (min-width:768px) {
@@ -839,8 +839,10 @@ div.newsletter {
 }
 
 div.newsletter::before {
-    background-image: url(../img/bg-newsletter.jpg);
+    background-image: url(../img/newsletter.jpg);
     content: '';
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 div.newsletter .contenido {
