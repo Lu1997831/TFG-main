@@ -202,7 +202,7 @@
 
         <div class="newsletter parallax">
             <div class="contenido contenedor">
-                <p> regístrate al newsletter:</p>
+                <p> Regístrate al newsletter:</p>
                 <h3>WWDC</h3>
                 <a href="#mc_embed_signup" class="boton_newsletter button transparente">Registro</a>
             </div> <!--.contenido-->

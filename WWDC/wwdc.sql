@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:8889
--- Tiempo de generación: 04-12-2018 a las 00:12:07
+-- Tiempo de generación: 04-12-2020 a las 00:12:07
 -- Versión del servidor: 5.6.35
 -- Versión de PHP: 7.1.6
 
@@ -85,31 +85,31 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`evento_id`, `nombre_evento`, `fecha_evento`, `hora_evento`, `id_cat_evento`, `id_inv`, `clave`) VALUES
-(4, 'HTML5 y CSS3', '2016-12-09', '02:00 PM', 3, 3, 'taller_01'),
-(6, 'WordPress', '2016-12-09', '19:00:00', 3, 5, 'taller_13'),
-(7, 'Como ser freelancer', '2016-12-09', '10:00:00', 2, 6, 'conf_01'),
-(8, 'Tecnologías del Futuro PHP', '2016-12-09', '05:00 PM', 2, 3, 'conf_02'),
-(9, 'Seguridad en la Web', '2016-12-09', '07:00 PM', 2, 2, 'conf_03'),
-(10, 'Diseño UI y UX para móviles', '2016-12-09', '10:00:00', 1, 6, 'sem_01'),
-(11, 'Angular 5', '2016-12-10', '10:00 AM', 3, 3, 'taller_02'),
-(12, 'PHP y MySQL', '2016-12-10', '12:00:00', 3, 2, 'taller_03'),
-(13, 'JavaScript Avanzado', '2016-12-10', '14:00:00', 3, 3, 'taller_04'),
-(14, 'SEO en Google', '2016-12-10', '17:00:00', 3, 4, 'taller_05'),
-(15, 'De Photoshop a HTML5 y CSS3', '2016-12-10', '19:00:00', 3, 5, 'taller_06'),
-(16, 'PHP Intermedio y Avanzado', '2016-12-10', '21:00:00', 3, 6, 'taller_07'),
-(17, 'Como crear una tienda online que venda millones en pocos día', '2016-12-10', '10:00:00', 2, 6, 'conf_04'),
-(18, 'Los mejores lugares para encontrar trabajo', '2016-12-10', '17:00:00', 2, 1, 'conf_05'),
-(19, 'Pasos para crear un negocio rentable ', '2016-12-10', '19:00:00', 2, 2, 'conf_06'),
-(20, 'Aprende a Programar en una mañana', '2016-12-10', '10:00:00', 1, 3, 'sem_02'),
-(21, 'Diseño UI y UX para móviles', '2016-12-10', '17:00:00', 1, 5, 'sem_03'),
-(22, 'Laravel', '2016-12-11', '10:00:00', 3, 1, 'taller_08'),
-(23, 'Crea tu propia API', '2016-12-11', '12:00:00', 3, 2, 'taller_09'),
-(24, 'JavaScript y jQuery', '2016-12-11', '14:00:00', 3, 3, 'taller_10'),
-(25, 'Creando Plantillas para WordPress', '2016-12-11', '17:00:00', 3, 4, 'taller_11'),
-(26, 'Tiendas Virtuales en Magento', '2016-12-11', '19:00:00', 3, 5, 'taller_12'),
-(30, 'Creando una App en Android en una mañana', '2016-12-11', '10:00:00', 1, 4, 'sem_04'),
-(31, 'Creando una App en iOS en una tarde', '2016-12-11', '17:00:00', 1, 1, 'sem_05'),
-(32, 'Flexbox para principiantes', '2016-12-10', '11:00:00', 2, 4, 'conf_07');
+(4, 'HTML5 y CSS3', '2021-12-09', '02:00 PM', 3, 3, 'taller_01'),
+(6, 'WordPress', '2021-12-09', '19:00:00', 3, 5, 'taller_13'),
+(7, 'Como ser freelancer', '2021-12-09', '10:00:00', 2, 6, 'conf_01'),
+(8, 'Tecnologías del Futuro PHP', '2021-12-09', '05:00 PM', 2, 3, 'conf_02'),
+(9, 'Seguridad en la Web', '2021-12-09', '07:00 PM', 2, 2, 'conf_03'),
+(10, 'Diseño UI y UX para móviles', '2021-12-09', '10:00:00', 1, 6, 'sem_01'),
+(11, 'Angular 5', '2021-12-10', '10:00 AM', 3, 3, 'taller_02'),
+(12, 'PHP y MySQL', '2021-12-10', '12:00:00', 3, 2, 'taller_03'),
+(13, 'JavaScript Avanzado', '2021-12-10', '14:00:00', 3, 3, 'taller_04'),
+(14, 'SEO en Google', '2021-12-10', '17:00:00', 3, 4, 'taller_05'),
+(15, 'De Photoshop a HTML5 y CSS3', '2021-12-10', '19:00:00', 3, 5, 'taller_06'),
+(16, 'PHP Intermedio y Avanzado', '2021-12-10', '21:00:00', 3, 6, 'taller_07'),
+(17, 'Como crear una tienda online que venda millones en pocos día', '2021-12-10', '10:00:00', 2, 6, 'conf_04'),
+(18, 'Los mejores lugares para encontrar trabajo', '2021-12-10', '17:00:00', 2, 1, 'conf_05'),
+(19, 'Pasos para crear un negocio rentable ', '2021-12-10', '19:00:00', 2, 2, 'conf_06'),
+(20, 'Aprende a Programar en una mañana', '2021-12-10', '10:00:00', 1, 3, 'sem_02'),
+(21, 'Diseño UI y UX para móviles', '2021-12-10', '17:00:00', 1, 5, 'sem_03'),
+(22, 'Laravel', '2021-12-11', '10:00:00', 3, 1, 'taller_08'),
+(23, 'Crea tu propia API', '2021-12-11', '12:00:00', 3, 2, 'taller_09'),
+(24, 'JavaScript y jQuery', '2021-12-11', '14:00:00', 3, 3, 'taller_10'),
+(25, 'Creando Plantillas para WordPress', '2021-12-11', '17:00:00', 3, 4, 'taller_11'),
+(26, 'Tiendas Virtuales en Magento', '2021-12-11', '19:00:00', 3, 5, 'taller_12'),
+(30, 'Creando una App en Android en una mañana', '2021-12-11', '10:00:00', 1, 4, 'sem_04'),
+(31, 'Creando una App en iOS en una tarde', '2021-12-11', '17:00:00', 1, 1, 'sem_05'),
+(32, 'Flexbox para principiantes', '2021-12-10', '11:00:00', 2, 4, 'conf_07');
 
 -- --------------------------------------------------------
 
