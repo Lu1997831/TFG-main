@@ -58,7 +58,7 @@ $compra->setPaymentMethod('paypal');
 
 $articulo = new Item();
 $articulo->setName($producto)
-         ->setCurrency('MXN')
+         ->setCurrency('EUR')
          ->setQuantity(1)
          ->setPrice($precio);
          
@@ -70,7 +70,7 @@ foreach($numero_boletos as $key => $value) {
             ${"articulo$i"} = new Item();
             $arreglo_pedido[] = ${"articulo$i"};
             ${"articulo$i"}->setName('Pase: ' . $key)
-                          ->setCurrency('USD')
+                          ->setCurrency('EUR')
                           ->setQuantity( (int) $value['cantidad'] )
                           ->setPrice( (int) $value['precio'] );
             $i++;
@@ -87,7 +87,7 @@ foreach($pedidoExtra as $key => $value) {
             ${"articulo$i"} = new Item();
             $arreglo_pedido[] = ${"articulo$i"};
             ${"articulo$i"}->setName('Extras: ' . $key)
-                           ->setCurrency('USD')
+                           ->setCurrency('EUR')
                            ->setQuantity( (int) $value['cantidad'] )
                            ->setPrice( $precio );
             $i++;
@@ -104,7 +104,7 @@ $listaArticulos->setItems($arreglo_pedido);
 
 
 $cantidad = new Amount();
-$cantidad->setCurrency('USD')
+$cantidad->setCurrency('EUR')
          ->setTotal($total);
          
 
