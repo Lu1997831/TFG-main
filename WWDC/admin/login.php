@@ -10,7 +10,7 @@
 <div class="login-box">
 
       <div class="login-logo">
-            <a href="../index.php"><b>GDLWebCamp</b> Login</a>
+            <a href="../index.php"><b>WWDC</b> Login</a>
       </div>
 
       <!-- /.login-logo -->

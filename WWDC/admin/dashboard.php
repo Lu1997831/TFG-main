@@ -102,7 +102,7 @@ include_once 'templates/header.php'; ?>
                     <!-- small box -->
                     <div class="small-box bg-green">
                         <div class="inner">
-                            <h3>$ <?php echo number_format( $ganancias['ganancias'] ); ?></h3>
+                            <h3> <?php echo number_format( $ganancias['ganancias'] ); ?> €</h3>
                             <p>Ganancias</p>
                         </div>
                         <div class="icon">

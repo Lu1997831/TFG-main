@@ -60,7 +60,7 @@
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
                                                                         <h3>Pase por día (viernes)</h3>
-                                                                        <p class="numero">$30</p>
+                                                                        <p class="numero">30€</p>
                                                                         <div class="orden">
                                                                             <label for="pase_dia">Boletos deseados:</label>
                                                                             <input type="number" min="0" id="pase_dia" size="3" name="boletos[un_dia][cantidad]" placeholder="0">
@@ -83,7 +83,7 @@
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
                                                                         <h3>Pase por 2 días (viernes y sábado)</h3>
-                                                                        <p class="numero">$45</p>
+                                                                        <p class="numero">30€</p>
                                                                         <div class="orden">
                                                                             <label for="pase_dosdias">Boletos deseados:</label>
                                                                             <input type="number" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0">

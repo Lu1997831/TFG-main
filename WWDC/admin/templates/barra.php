@@ -5,9 +5,9 @@
     <!-- Logo -->
     <a href="../index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>G</b>WC</span>
+      <span class="logo-mini"><b>WWDC</b></span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>GDL</b>WebCamp</span>
+      <span class="logo-lg"><b>WWDC</b></span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">

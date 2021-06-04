@@ -114,7 +114,7 @@ include_once 'templates/header.php'; ?>
                                 ?>
                             </td>
                             <td><?php echo $registrado['nombre_regalo']; ?></td>
-                            <td>$ <?php echo $registrado['total_pagado']; ?></td>
+                            <td> <?php echo $registrado['total_pagado']; ?> €</td>
                             
                             <td>
                                 <a href="editar-registrado.php?id=<?php echo $registrado['ID_Registrado']; ?>" type="button" class="btn bg-orange btn-flat margin"> <i class="fa fa-pencil" aria-hidden="true"></i></a>

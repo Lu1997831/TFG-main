@@ -1,6 +1,6 @@
 
   <footer class="main-footer">
-    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="../index.php">GDLWebCamp</a>.</strong> Todos los derechos reservados
+    <strong>Copyright &copy; <?php echo date('Y'); ?> <a href="../index.php">WWDC</a>.</strong> Todos los derechos reservados
   </footer>
 
   <!-- /.control-sidebar -->
