@@ -80,9 +80,9 @@
         <div class="barra">
             <div class="contenedor clearfix">
                 <div class="logo">
-                    <!-- <a href="index.php">
-                        <img src="img/logo.svg" alt="logo gdlwebcamp">
-                    </a> -->
+                    <a href="index.php">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
                 </div>
 
                 <div class="menu-movil">
