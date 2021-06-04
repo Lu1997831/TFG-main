@@ -368,7 +368,7 @@ h1.nombre-sitio {
 
 div.barra {
     background-color: #353535;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .fixed {
@@ -385,7 +385,7 @@ div.logo {
 }
 
 div.logo img {
-    width: 100%;
+    width: 45%;
 }
 
 @media only screen and (min-width:768px) {
@@ -435,6 +435,7 @@ nav.navegacion-principal a:last-child:hover {
         float: right;
         text-align: right;
         display: block;
+        padding-top: 20px
     }
     nav.navegacion-principal a {
         padding: 10px 10px;
