@@ -166,8 +166,6 @@
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
             L.marker([51.500919, -0.124626]).addTo(map).bindPopup('WWDC').openPopup();
-            // .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
-            // .openTooltip();
         }
     });
 

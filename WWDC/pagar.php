@@ -111,7 +111,7 @@ $cantidad->setCurrency('EUR')
 $transaccion =  new Transaction();
 $transaccion->setAmount($cantidad)
             ->setItemList($listaArticulos)
-            ->setDescription('Pago GDLWEBCAMP ')
+            ->setDescription('Pago WWDC ')
             ->setInvoiceNumber($ID_registro);
             
 $redireccionar = new RedirectUrls();
