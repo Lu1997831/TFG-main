@@ -1,6 +1,7 @@
 <?php 
 if(isset($_POST['submit'])):
   
+      echo "Hola";
   
 endif;
 ?>
@@ -28,9 +29,7 @@ endif;
                     </div>
               </form>
               
-              <?php
-                  echo $resultado;
-              ?>
+              
               
             
         </section>
