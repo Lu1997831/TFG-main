@@ -80,7 +80,7 @@
         <div class="barra">
             <div class="contenedor clearfix">
                 <div class="logo">
-                    <a href="index.php">
+                    <a href="/TFG/TFG-main/WWDC">
                         <img src="img/logo.png" alt="logo">
                     </a>
                 </div>
@@ -92,11 +92,13 @@
                 </div>
 
                 <nav class="navegacion-principal clearfix">
-                <a href="index.php">Home</a>
+                
                 <a href="conferencia.php">Conferencia</a>
                     <a href="calendario.php">Calendario</a>
                     <a href="invitados.php">Invitados</a>
                     <a href="registro.php">Entradas</a>
+                    <a href="admin/admin-area.php"><i class="fa fa-user"></i></a>
+
                 </nav>
             </div><!--.contenedor-->
         </div> <!--.barra-->
