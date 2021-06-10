@@ -283,6 +283,10 @@ div.hero {
     background-size: cover;
 }
 
+.fa-user-lock {
+    background-image: url();
+}
+
 div.contenido-header {
     padding-top: 40px;
 }
@@ -403,7 +407,7 @@ nav.navegacion-principal {
 }
 
 nav.navegacion-principal a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     color: #ffffff;
     font-size: 1.3em;
     text-transform: uppercase;
@@ -421,7 +425,6 @@ nav.navegacion-principal a:hover {
 }
 
 nav.navegacion-principal a:last-child {
-    border: 2px solid #fe4918;
     color: #fe4918;
 }
 
@@ -524,7 +527,7 @@ nav.menu-programa a {
     text-align: center;
     color: #000000;
     text-decoration: none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     margin-bottom: 10px;
     font-size: 1.2em;
     position: relative;
@@ -628,7 +631,7 @@ div.invitado p {
     background-color: rgba(0, 0, 0, 0.55);
     width: 100%;
     text-align: left;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     color: #fe4918;
     text-transform: uppercase;
     -webkit-transition: all .5s ease-in-out;
@@ -673,7 +676,7 @@ ul.resumen-evento li {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 24px;
 }
 
@@ -688,7 +691,7 @@ p.numero {
     font-size: 4em;
     display: block;
     margin: 0 0 10px 0;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
 
 
@@ -740,7 +743,7 @@ div.tabla-precio ul li:before {
 }
 
 div.tabla-precio h3 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
 }
@@ -910,7 +913,7 @@ footer .contenedor>div {
 footer h3 {
     color: #ffffff;
     text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'montserrat', sans-serif;
     margin-bottom: 20px;
 }
 

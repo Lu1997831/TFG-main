@@ -97,7 +97,7 @@
                     <a href="calendario.php">Calendario</a>
                     <a href="invitados.php">Invitados</a>
                     <a href="registro.php">Entradas</a>
-                    <a href="admin/admin-area.php"><i class="fas fa-user-lock"></i></a>
+                    <a href="admin/admin-area.php"><i class="fa fa-user"></i></a>
 
                 </nav>
             </div><!--.contenedor-->
