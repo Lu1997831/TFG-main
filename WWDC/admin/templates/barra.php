@@ -24,7 +24,7 @@
             <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <?php $usuario = $_SESSION['usuario']; ?>
-                  <span class="hidden-xs"><?php echo 'Sesión iniciada como ' . ucfirst($usuario); ?></span>
+                  <span class="hidden-xs"><?php echo 'Sesión iniciada como <i>' . ucfirst($usuario) . '</i>'  ?></span>
                 </a>
             
                     

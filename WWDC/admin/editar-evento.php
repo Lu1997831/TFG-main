@@ -152,9 +152,9 @@
                                     <!-- /.box-body -->
 
                                     <div class="box-footer">
-                                        <input type="hidden" name="registro" value="actualizar">
+                                        <input type="text" name="registro" value="actualizar">
                                         <?php $id = $_GET['id']; ?>
-                                        <input type="hidden" name="id_registro" value="<?php echo $id; ?>">
+                                        <input type="text" name="id_registro" value="<?php echo $id; ?>">
                                         <button type="submit" name="actualizar" id="actualizar" class="btn btn-primary">Actualizar</button>
                                     </div>
                                 </form>

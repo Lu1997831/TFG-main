@@ -18,7 +18,7 @@ include_once 'templates/header.php'; ?>
     <section class="content-header">
       <h1>
         Registrados
-        <small>Aquí podrás ver todos los registrados</small>
+        <small>Aquí podrás ver todos los usuarios registrados</small>
       </h1>
 
       

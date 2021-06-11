@@ -20,7 +20,7 @@ $(document).ready(function() {
                     )
                     setTimeout(function() {
                         window.location.href = 'dashboard.php';
-                    }, 3000);
+                    }, 1500);
                 } else {
                     swal(
                         'Error',

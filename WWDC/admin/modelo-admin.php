@@ -15,7 +15,7 @@ $id_registro = $_POST['id_registro'];
 
 if($_POST['registro'] == 'nuevo') {
     try {
-        $stmt = $conn->prepare("INSERT INTO eventos (nombre_evento, fecha_evento, hora_evento, cupo, id_cat_evento, id_inv, fecha_creado) VALUES (?,?,?,?, ?, NOW() )");
+        $stmt = $conn->prepare("INSERT INTO admins (nombre_evento, fecha_evento, hora_evento, cupo, id_cat_evento, id_inv, fecha_creado) VALUES (?,?,?,?, ?, NOW() )");
         $stmt->bind_param("sssiss", $titulo, $fecha_formato, $hora, $cupo, $categoria_id, $invitado_id);
         $stmt->execute();
         if($stmt->affected_rows) {

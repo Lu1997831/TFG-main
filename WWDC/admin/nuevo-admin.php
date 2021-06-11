@@ -17,8 +17,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1 class="text-center">
-        Añadir Categoría de Eventos
-        <small>Utilice el formulario para agregar una nueva categoría</small>
+        Añadir Administrador
+        <small>Utilice el formulario para agregar un nuevo administrador</small>
       </h1>
 
       
@@ -31,28 +31,25 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="box box-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">Información Categoría</h3>
+                                <h3 class="box-title">Información del Administrador</h3>
                             </div>
                             <!-- /.box-header -->
                                 <!-- form start -->
-                                <form role="form" id="guardar-registro" action="modelo-categoria.php" method="post">
+                                <form role="form" id="guardar-registro" action="modelo-admin.php" method="post">
                                     <div class="box-body">
                                             <div class="form-group">
-                                                <label for="nombre_evento">Nombre: </label>
-                                                <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria" placeholder="Ej. Taller o Workshop">
+                                                <label for="nombre_admin">Nombre del Administrador</label>
+                                                <input type="text" class="form-control" id="nombre_admin" name="nombre_admin" placeholder="admin">
                                             </div>
 
                                             <div class="form-group">
-                                                <label>Icono:</label>
-                                                <div class="input-group">
-                                                    <div class="input-group-addon">
-                                                         <i class="fa fa-lock" aria-hidden="true"></i>
-                                                    </div>
-                                                    <input id="icono" type="text" name="icono" class="form-control pull-right" placeholder="fa-icon" value="fa-search" >
-                                                </div>
-                                                <!-- /.input group -->
+                                                <label for="contraseña">Contraseña</label>
+                                                <input type="password" class="form-control" id="pass_admin" name="pass_admin">
                                             </div>
+
                                             
+
+                                    
                                     </div>
                                     <!-- /.box-body -->
 

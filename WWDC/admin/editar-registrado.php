@@ -67,7 +67,7 @@
                                             <div class="form-group">
                                                 <div id="paquetes" class="paquetes">
                                                     <div class="box-header with-border">
-                                                        <h3 class="box-title">Elige el número de boletos</h3>
+                                                        <h3 class="box-title">Elige el número de pases</h3>
                                                     </div>
                                                     
                                                         <ul class="lista-precios clearfix row">
@@ -96,8 +96,8 @@
                                                             
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
-                                                                        <h3>Pase por 2 días </h3>
-                                                                        <p class="numero">30€</p>
+                                                                        <h3>Pase por 2 días (LyV) </h3>
+                                                                        <p class="numero">45€</p>
                                                                         <div class="orden">
                                                                             <label for="pase_dosdias">Pases deseados:</label>
                                                                             <input type="number" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0" value="<?php echo $boletos['pase_2dias']['cantidad']; ?>">

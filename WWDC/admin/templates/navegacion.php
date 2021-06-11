@@ -95,8 +95,9 @@
                     <ul class="treeview-menu">
                         <li><a href="lista-admin.php"><i class="fa fa-list" aria-hidden="true"></i> Ver Todos</a></li>
                         <li><a href="nuevo-admin.php"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</a></li>
-                        <li><a href="#" class="fa fa-key" aria-hidden="true"> Cambiar Clave</a></li>
-                        <li><a href="login.php?cerrar_sesion=true" class="fa fa-sign-out" aria-hidden="true"> Cerrar Sesión</a></li>
+                        <li><a href="#"> <i class="fa fa-key" aria-hidden="true"></i> Cambiar Clave</a></li>
+                        <li><a href="login.php?cerrar_sesion=true"><i class="fa fa-sign-out" aria-hidden="true"></i> Cerrar Sesión</a></li>
+                        
                     </ul>
                 </li>
 
