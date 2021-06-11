@@ -49,7 +49,7 @@
             </li>
             <li class="treeview">
                 <a href="#">
-                    <i class="fa fa-files-o"></i> <span>Categorias Eventos </span>
+                    <i class="fa fa-files-o"></i> <span>Categorías de eventos </span>
                     <span class="pull-right-container">
                         <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -84,7 +84,7 @@
                 </ul>
             </li>
 
-            <?php if($_SESSION['nivel'] == 1): ?>
+           
                 <li class="treeview">
                     <a href="#">
                         <i class="fa fa-address-book"></i> <span>Administradores </span>
@@ -95,9 +95,13 @@
                     <ul class="treeview-menu">
                         <li><a href="lista-admin.php"><i class="fa fa-list" aria-hidden="true"></i> Ver Todos</a></li>
                         <li><a href="nuevo-admin.php"><i class="fa fa-plus" aria-hidden="true"></i> Agregar</a></li>
+                        <li><a href="#" class="fa fa-key" aria-hidden="true"> Cambiar Clave</a></li>
+                        <li><a href="login.php?cerrar_sesion=true" class="fa fa-sign-out" aria-hidden="true"> Cerrar Sesión</a></li>
                     </ul>
                 </li>
-            <?php endif; ?>
+
+               
+            
            
         <!-- <li class="header">LABELS</li> -->
         </ul>

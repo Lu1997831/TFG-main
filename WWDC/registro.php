@@ -1,7 +1,7 @@
   <?php include_once 'includes/templates/header.php'; ?>  
 
         <section class="seccion contenedor">
-            <h2>Registro de Usuarios</h2>
+            <h2>Formulario de compra de entradas</h2>
             <form id="registro" class="registro" action="pagar.php" method="post">
                 <div id="datos_usuario" class="registro caja clearfix">
                     <div class="campo">
@@ -20,19 +20,19 @@
                 </div> <!--#datos_usuario-->
                 
                 <div id="paquetes" class="paquetes">
-                  <h3>Elige el número de boletos</h3>
+                  <h3>Elige los pases</h3>
                   <ul class="lista-precios clearfix">
                       <li>
                             <div class="tabla-precio">
-                                <h3>Pase por día (viernes)</h3>
+                                <h3>Pase por día (martes)</h3>
                                 <p class="numero">30€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                  <li>Acceso limitado</li>
+                                  <li>Acceso a los talleres</li>
+                                  <li>Acceso limitado a las conferencias</li>
                                 </ul>
                                 <div class="orden">
-                                    <label for="pase_dia">Boletos deseados:</label>
+                                    <label for="pase_dia">Pases deseados:</label>
                                     <input type="number" min="0" id="pase_dia" size="3" name="boletos[un_dia][cantidad]" placeholder="0">
                                     <input type="hidden" value="30" name="boletos[un_dia][precio]">
                                 </div>
@@ -43,12 +43,12 @@
                                 <h3>Todos los días</h3>
                                 <p class="numero">50€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                  <li>Acceso Premium</li>
+                                  <li>Rápido acceso sin esperas</li>
+                                  <li>Acceso a todo el pabellón</li>
                                 </ul>
                                 <div class="orden">
-                                    <label for="pase_completo">Boletos deseados:</label>
+                                    <label for="pase_completo">Pases deseados:</label>
                                     <input type="number" min="0" id="pase_completo" size="3" name="boletos[completo][cantidad]" placeholder="0">
                                     <input type="hidden" value="50" name="boletos[completo][precio]">
                                 </div>
@@ -57,15 +57,15 @@
                       
                       <li>
                             <div class="tabla-precio">
-                                <h3>Pase por 2 días (viernes y sábado)</h3>
+                                <h3>Pase por 2 días (lunes y viernes)</h3>
                                 <p class="numero">45€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                  <li>Acceso limitado</li>
+                                  <li>Acceso a todos los talleres</li>
+                                  <li>Acceso limitado a las conferencias</li>
                                 </ul>
                                 <div class="orden">
-                                    <label for="pase_dosdias">Boletos deseados:</label>
+                                    <label for="pase_dosdias">Pases deseados:</label>
                                     <input type="number" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0">
                                     <input type="hidden" value="45" name="boletos[2dias][precio]">
                                 </div>
@@ -76,7 +76,7 @@
                 
                 
                 <div id="eventos" class="eventos clearfix">
-                         <h3>Elige tus talleres</h3>
+                         <h3>Elige a qué quieres asistir</h3>
                          <div class="caja">
                                 <?php
                                     try {
@@ -98,7 +98,7 @@
                                     while($eventos = $resultado->fetch_assoc()) {
                                         
                                         $fecha = $eventos['fecha_evento'];
-                                        setlocale(LC_ALL, 'es_ES');
+                                        setlocale(LC_ALL, 'es_ES.UTF-8', 'Spanish_Spain', 'Spanish');
                                         $dia_semana = strftime("%A", strtotime($fecha));
                                         
                                         $categoria = $eventos['cat_evento'];
@@ -139,16 +139,16 @@
                      </div> <!--#eventos-->
                      
                      <div id="resumen" class="resumen">
-                        <h3>Pago y Extras</h3>
+                        <h3>PAGOS</h3>
                         <div class="caja clearfix">
                               <div class="extras">
                                     <div class="orden">
-                                        <label for="camisa_evento">Camisa del evento 10€ <small>(promocion 7% dto.)</small></label>
+                                        <label for="camisa_evento">Camisa del evento 10€ <small>(descuento promoción del 7%)</small></label>
                                         <input type="number" min="0" id="camisa_evento" name="pedido_extra[camisas][cantidad]" size="3" placeholder="0">
                                         <input type="hidden" value="10" name="pedido_extra[camisas][precio]">
                                     </div> <!--.orden-->
                                     <div class="orden">
-                                        <label for="etiquetas">Paquete de 10 etiquetas 2€ <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
+                                        <label for="etiquetas">Paquete de 10 etiquetas 2€ <small>(Java, Swift, Kotlin, Apple, Android)</small></label>
                                         <input type="number" min="0" id="etiquetas" name="pedido_extra[etiquetas][cantidad]" size="3" placeholder="0">
                                         <input type="hidden" value="2" name="pedido_extra[etiquetas][precio]">
                                     </div> <!--.orden-->
@@ -156,9 +156,9 @@
                                         <label for="regalo">Seleccione un regalo</label> <br>
                                         <select id="regalo" name="regalo" required>
                                             <option value="">- Seleccione un regalo --</option>
-                                            <option value="2">Etiquetas</option>
+                                            <option value="2">Auriculares</option>
                                             <option value="1">Pulsera</option>
-                                            <option value="3">Plumas</option>
+                                            <option value="3">Powerbank</option>
                                         </select>
                                     </div><!--.orden-->
                                     

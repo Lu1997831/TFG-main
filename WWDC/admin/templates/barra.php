@@ -24,18 +24,10 @@
             <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <?php $usuario = $_SESSION['usuario']; ?>
-                  <span class="hidden-xs"><?php echo $usuario; ?></span>
+                  <span class="hidden-xs"><?php echo 'Sesión iniciada como ' . ucfirst($usuario); ?></span>
                 </a>
             
-                    <!-- Menu Footer-->
-                    <li class="user-footer">
-                        <div class="pull-left">
-                          <a href="#" class="btn btn-default btn-flat">Cambiar Clave</a>
-                        </div>
-                        <div class="pull-right">
-                          <a href="login.php?cerrar_sesion=true" class="btn btn-default btn-flat">Cerrar Sesión</a>
-                        </div>
-                    </li>
+                    
                 </ul>
             </li>
         </ul>

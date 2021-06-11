@@ -46,6 +46,7 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
     </head>
     <body class="<?php echo $pagina; ?>">
         <!--[if lt IE 8]>
@@ -66,7 +67,7 @@
                     </nav>
                     <div class="informacion-evento">
                         <div class="clearfix">
-                            <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 10-15 Jun</p>
+                            <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 14-18 Jun</p>
                             <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Londres, UK</p>
                         </div>
 
@@ -97,7 +98,8 @@
                     <a href="calendario.php">Calendario</a>
                     <a href="invitados.php">Invitados</a>
                     <a href="registro.php">Entradas</a>
-                    <a href="admin/admin-area.php"><i class="fa fa-user"></i></a>
+                    <a href="admin/login.php?cerrar_sesion=true"><i class="fa fa-lock"></i></a>
+                    
 
                 </nav>
             </div><!--.contenedor-->

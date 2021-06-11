@@ -73,10 +73,10 @@
                                                         <ul class="lista-precios clearfix row">
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
-                                                                        <h3>Pase por día (viernes)</h3>
+                                                                        <h3>Pase por día (martes)</h3>
                                                                         <p class="numero">30€</p>
                                                                         <div class="orden">
-                                                                            <label for="pase_dia">Boletos deseados:</label>
+                                                                            <label for="pase_dia">Pases deseados:</label>
                                                                             <input type="number" min="0" id="pase_dia" size="3" name="boletos[un_dia][cantidad]" placeholder="0" value="<?php echo $boletos['un_dia']['cantidad']; ?>">
                                                                             <input type="hidden" value="30" name="boletos[un_dia][precio]">
                                                                         </div>
@@ -85,9 +85,9 @@
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
                                                                         <h3>Todos los días</h3>
-                                                                        <p class="numero">$50</p>
+                                                                        <p class="numero">50€</p>
                                                                         <div class="orden">
-                                                                            <label for="pase_completo">Boletos deseados:</label>
+                                                                            <label for="pase_completo">Pases deseados:</label>
                                                                             <input type="number" min="0" id="pase_completo" size="3" name="boletos[completo][cantidad]" placeholder="0"  value="<?php echo $boletos['pase_completo']['cantidad']; ?>">
                                                                             <input type="hidden" value="50" name="boletos[completo][precio]">
                                                                         </div>
@@ -96,10 +96,10 @@
                                                             
                                                             <li class="col-md-4">
                                                                     <div class="tabla-precio">
-                                                                        <h3>Pase por 2 días (viernes y sábado)</h3>
+                                                                        <h3>Pase por 2 días </h3>
                                                                         <p class="numero">30€</p>
                                                                         <div class="orden">
-                                                                            <label for="pase_dosdias">Boletos deseados:</label>
+                                                                            <label for="pase_dosdias">Pases deseados:</label>
                                                                             <input type="number" min="0" id="pase_dosdias" size="3" name="boletos[2dias][cantidad]" placeholder="0" value="<?php echo $boletos['pase_2dias']['cantidad']; ?>">
                                                                             <input type="hidden" value="45" name="boletos[2dias][precio]">
                                                                         </div>
@@ -143,7 +143,7 @@
                                                             $eventos_dias = array();
                                                             while($eventos = $resultado->fetch_assoc()) {
                                                                 $fecha = $eventos['fecha_evento'];
-                                                                setlocale(LC_ALL,"es_ES");
+                                                                setlocale(LC_ALL,'es_ES.UTF-8', 'Spanish_Spain', 'Spanish');
                                                                 $dia_semana =  strftime("%A", strtotime($fecha));
 
                                                                 $categoria = $eventos['cat_evento'];
@@ -192,22 +192,22 @@
                                                     <div class="caja clearfix row">
                                                         <div class="extras col-md-6">
                                                                 <div class="orden">
-                                                                    <label for="camisa_evento">Camisa del evento $10 <small>(promocion 7% dto.)</small></label>
+                                                                    <label for="camisa_evento">Camisa del evento 10€ <small>(descuento promoción del 7%)</small></label>
                                                                     <input type="number" class="form-control" min="0" id="camisa_evento" name="pedido_extra[camisas][cantidad]" size="3" placeholder="0" value="<?php echo $boletos['camisas']; ?>">
                                                                     <input type="hidden" value="10" name="pedido_extra[camisas][precio]">
                                                                 </div> <!--.orden-->
                                                                 <div class="orden">
-                                                                    <label for="etiquetas">Paquete de 10 etiquetas $2 <small>(HTML5, CSS3, JavaScript, Chrome)</small></label>
+                                                                    <label for="etiquetas">Paquete de 10 etiquetas 2€ <small>(Java, Swift, Kotlin, Apple, Android)</small></label>
                                                                     <input type="number" class="form-control" min="0" id="etiquetas" name="pedido_extra[etiquetas][cantidad]" size="3" placeholder="0" value="<?php echo $boletos['etiquetas']; ?>">
                                                                     <input type="hidden" value="2" name="pedido_extra[etiquetas][precio]">
                                                                 </div> <!--.orden-->
                                                                 <div class="orden">
-                                                                    <label for="regalo">Seleccione un regalo</label> <br>
+                                                                    <label for="regalo">Elija un regalo</label> <br>
                                                                     <select id="regalo" name="regalo" required class="select2 form-control">
                                                                         <option value="">- Seleccione un regalo --</option>
-                                                                        <option value="2" <?php echo ($registrado['regalo'] == 2) ? 'selected' : '' ?>>Etiquetas</option>
+                                                                        <option value="2" <?php echo ($registrado['regalo'] == 2) ? 'selected' : '' ?>>Auriculares</option>
                                                                         <option value="1" <?php echo ($registrado['regalo'] == 1) ? 'selected' : '' ?>>Pulsera</option>
-                                                                        <option value="3" <?php echo ($registrado['regalo'] == 3) ? 'selected' : '' ?>>Plumas</option>
+                                                                        <option value="3" <?php echo ($registrado['regalo'] == 3) ? 'selected' : '' ?>>Powerbank</option>
                                                                     </select>
                                                                 </div><!--.orden-->
                                                                 <br>

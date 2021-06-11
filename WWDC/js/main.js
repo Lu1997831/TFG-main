@@ -131,15 +131,15 @@
                 var diasElegidos = [];
 
                 if (boletosDia > 0) {
-                    diasElegidos.push('viernes');
+                    diasElegidos.push('martes');
                     console.log(diasElegidos);
                 }
                 if (boletos2Dias > 0) {
-                    diasElegidos.push('viernes', 'sabado');
+                    diasElegidos.push('lunes', 'viernes');
                     console.log(diasElegidos);
                 }
                 if (boletoCompleto > 0) {
-                    diasElegidos.push('viernes', 'sabado', 'domingo');
+                    diasElegidos.push('lunes', 'martes', 'jueves', 'viernes');
                     console.log(diasElegidos);
                 }
                 console.log(diasElegidos.length);
@@ -193,6 +193,7 @@
         $('body.conferencia .navegacion-principal a:contains("Conferencia")').addClass('activo');
         $('body.calendario .navegacion-principal a:contains("Calendario")').addClass('activo');
         $('body.invitados .navegacion-principal a:contains("Invitados")').addClass('activo');
+        $('body.registro .navegacion-principal a:contains("Entradas")').addClass('activo');
 
         // Menu fijo
 
@@ -238,6 +239,8 @@
             return false;
         });
 
+
+
         // Animaciones para los Numeros
         var resumenLista = jQuery('.resumen-evento');
         if (resumenLista.length > 0) {
@@ -255,7 +258,7 @@
 
         //Cuenta Regresiva
 
-        $('.cuenta-regresiva').countdown('2021/06/14 17:30:00', function(event) {
+        $('.cuenta-regresiva').countdown('2021/06/15 17:30:00', function(event) {
             $('#dias').html(event.strftime('%D'));
             $('#horas').html(event.strftime('%H'));
             $('#minutos').html(event.strftime('%M'));
