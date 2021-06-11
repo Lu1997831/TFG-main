@@ -103,8 +103,6 @@
                
             
            
-        <!-- <li class="header">LABELS</li> -->
         </ul>
     </section>
-    <!-- /.sidebar -->
   </aside>
