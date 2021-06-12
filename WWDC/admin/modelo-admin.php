@@ -1,46 +1,46 @@
 <?php
 include_once 'funciones/funciones.php';
 
-// Leer los datos
-$titulo = $_POST['titulo_evento'];
-$categoria_id = $_POST['categoria_evento'];
-$invitado_id =  $_POST['invitado_evento'];
-$cupo =  $_POST['cupo_evento'];
-// obtener fecha
-$fecha = $_POST['fecha_evento'];
-$fecha_formato = date("Y-m-d", strtotime($fecha));
-//obtener hora
-$hora = $_POST['hora_evento'];
-$id_registro = $_POST['id_registro'];
+
 
 if($_POST['registro'] == 'nuevo') {
-    try {
-        $stmt = $conn->prepare("INSERT INTO admins (nombre_evento, fecha_evento, hora_evento, cupo, id_cat_evento, id_inv, fecha_creado) VALUES (?,?,?,?, ?, NOW() )");
-        $stmt->bind_param("sssiss", $titulo, $fecha_formato, $hora, $cupo, $categoria_id, $invitado_id);
-        $stmt->execute();
-        if($stmt->affected_rows) {
-            $respuesta = array(
-                'respuesta' => 'correcto',
-                'id_insertado' => $stmt->insert_id
+    $usuario = $_POST['usuario'];
+    $password = $_POST['password'];
+    
+    if(strlen($usuario) < 5):
+          echo "El nombre de usuario debe ser más largo";
+    else:
+            
+            $opciones = array(
+              'cost' => 12
             );
-
-        } else {
-            $respuesta = array(
-                'respuesta' => 'error'
-            );
-        }
-        $stmt->close();
-        $conn->close();
-        
-    } catch(Exception $e) {
-        $respuesta = array(
-            'respuesta' =>  $e->getMessage()
-        );
-    }
+            
+              $hashed_password = password_hash($password, PASSWORD_BCRYPT, $opciones);
+            
+            try {
+              require_once('includes/funciones/bd_conexion.php');
+              $stmt = $conn->prepare("INSERT INTO admins (usuario, hash_pass) VALUES (?,?)");
+              $stmt->bind_param("ss", $usuario, $hashed_password);
+              
+              $stmt->execute();
+              if($stmt->error):
+                echo "<div class='mensaje error'>";
+                echo "Hubo un error";
+                echo "</div>";
+              else:
+                echo "<div class='mensaje'>";
+                echo "Se insertó correctamente el usuario";
+                echo "</div>";
+              endif;    
+              $stmt->close();
+              $conn->close();
+            } catch(Exception $e) {
+              echo "Error:" . $e->getMessage();
+            }
 
     die(json_encode($respuesta));
 }
-
+/*
 if($_POST['registro'] == 'actualizar') {
 
     $id_registro = $_POST['id_registro'];
@@ -116,4 +116,4 @@ if($_POST['registro'] == 'eliminar'){
     }
 
     die(json_encode($respuesta));
-}
+}*/

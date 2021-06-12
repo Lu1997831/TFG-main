@@ -35,7 +35,7 @@
                             </div>
                             <!-- /.box-header -->
                                 <!-- form start -->
-                                <form role="form" id="guardar-registro" action="modelo-admin.php" method="post">
+                                <form role="form" id="guardar-registro" action="nuevo-admin.php" method="post">
                                     <div class="box-body">
                                             <div class="form-group">
                                                 <label for="nombre_admin">Nombre del Administrador</label>
@@ -54,14 +54,53 @@
                                     <!-- /.box-body -->
 
                                     <div class="box-footer">
-                                        <input type="hidden" name="registro" value="nuevo">
-                                        <button type="submit" name="agregar" id="agregar" class="btn btn-primary">Agregar</button>
+                                        <button type="submit" name="submit" id="agregar" class="btn btn-primary">Crear</button>
                                     </div>
                                 </form>
                             
                     </div>
                 </div>
             </div> <!--.row-->  
+
+            <?php
+                  if(isset($_POST['submit'])):
+                        $usuario = $_POST['usuario'];
+                        $password = $_POST['password'];
+                        
+                        if(strlen($usuario) < 5):
+                              echo "El nombre de usuario debe ser más largo";
+                        else:
+                                
+                                $opciones = array(
+                                  'cost' => 12
+                                );
+                                
+                                  $hashed_password = password_hash($password, PASSWORD_BCRYPT, $opciones);
+                                
+                                try {
+                                  require_once('includes/funciones/bd_conexion.php');
+                                  $stmt = $conn->prepare("INSERT INTO admins (usuario, hash_pass) VALUES (?,?)");
+                                  $stmt->bind_param("ss", $usuario, $hashed_password);
+                                  
+                                  $stmt->execute();
+                                  if($stmt->error):
+                                    echo "<div class='mensaje error'>";
+                                    echo "Hubo un error";
+                                    echo "</div>";
+                                  else:
+                                    echo "<div class='mensaje'>";
+                                    echo "Se insertó correctamente el usuario";
+                                    echo "</div>";
+                                  endif;    
+                                  $stmt->close();
+                                  $conn->close();
+                                } catch(Exception $e) {
+                                  echo "Error:" . $e->getMessage();
+                                }
+                        endif;  
+                  endif;  
+              
+              ?>
     </section>
     <!-- /.content -->
   </div>
