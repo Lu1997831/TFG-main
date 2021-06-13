@@ -39,12 +39,12 @@
                                     <div class="box-body">
                                             <div class="form-group">
                                                 <label for="nombre_admin">Nombre del Administrador</label>
-                                                <input type="text" class="form-control" id="nombre_admin" name="nombre_admin" placeholder="admin">
+                                                <input type="text" class="form-control" id="nombre_admin" name="usuario" placeholder="admin">
                                             </div>
 
                                             <div class="form-group">
                                                 <label for="contraseña">Contraseña</label>
-                                                <input type="password" class="form-control" id="pass_admin" name="pass_admin">
+                                                <input type="password" class="form-control" id="pass_admin" name="password">
                                             </div>
 
                                             
@@ -78,7 +78,7 @@
                                   $hashed_password = password_hash($password, PASSWORD_BCRYPT, $opciones);
                                 
                                 try {
-                                  require_once('includes/funciones/bd_conexion.php');
+                                  require_once('/funciones/funciones.php');
                                   $stmt = $conn->prepare("INSERT INTO admins (usuario, hash_pass) VALUES (?,?)");
                                   $stmt->bind_param("ss", $usuario, $hashed_password);
                                   

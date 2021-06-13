@@ -128,31 +128,39 @@
 
                     botonRegistro.disabled = false;
                     document.getElementById('total_pedido').value = totalPagar;
+                    var tarjeta = document.getElementById('form_tarjeta');
+                    console.log(tarjeta);
 
                 }
             }
+
+            //ocultar al cargar la página los talleres
+            var diasSemana = document.getElementsByClassName('contenido-dia');
+            for (var i = 0; i < diasSemana.length; i++) {
+                diasSemana[i].style.display = 'none';
+            }
+
+
 
             function mostrarDias() {
                 var boletosDia = parseInt(pase_dia.value, 10) || 0,
                     boletos2Dias = parseInt(pase_dosdias.value, 10) || 0,
                     boletoCompleto = parseInt(pase_completo.value, 10) || 0;
 
-                var todosDias = document.getElementsByClassName('contenido-dia');
-                todosDias.style.display = 'none'
-                console.log(boletoCompleto);
+
 
                 var diasElegidos = [];
 
                 if (boletosDia > 0) {
-                    diasElegidos.push('viernes');
+                    diasElegidos.push('martes');
                     console.log(diasElegidos);
                 }
                 if (boletos2Dias > 0) {
-                    diasElegidos.push('viernes', 'sabado');
+                    diasElegidos.push('lunes', 'viernes');
                     console.log(diasElegidos);
                 }
                 if (boletoCompleto > 0) {
-                    diasElegidos.push('viernes', 'sabado', 'domingo');
+                    diasElegidos.push('lunes', 'martes', 'jueves', 'viernes');
                     console.log(diasElegidos);
                 }
                 console.log(diasElegidos.length);

@@ -15,8 +15,8 @@
   $registro = eventos_json($eventos);
   try {
     require_once('includes/funciones/bd_conexion.php');
-    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado) VALUES (?,?,?,?,?,?,?,?)");
-    $stmt->bind_param("ssssssis", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total);
+    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado, pagado) VALUES (?,?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssssssisi", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total, 1);
     $stmt->execute();
     $stmt->close();
     $conn->close();
@@ -30,9 +30,14 @@
   <section class="seccion contenedor">
       <h2>Resumen Registro</h2>
       
-     <?php if(isset($_GET['exitoso'])): 
-           if($_GET['exitoso'] == "1"):
-                 echo "Registro exitoso";
+     <?php
+          $url= "http://localhost/TFG/TFG-main/WWDC/";
+          $tiempo_espera = 3;
+          
+          if(isset($_GET['exitoso'])): 
+          if($_GET['exitoso'] == "1"):
+                 echo "<h1>Registrado con éxito</h1>";
+                 header("refresh: $tiempo_espera; url=$url");
            endif; 
       endif; ?>
   

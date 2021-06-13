@@ -40,7 +40,7 @@
                                   $hashed_password = password_hash($password, PASSWORD_BCRYPT, $opciones);
                                 
                                 try {
-                                  require_once('includes/funciones/bd_conexion.php');
+                                  require_once('../includes/funciones/bd_conexion.php');
                                   $stmt = $conn->prepare("INSERT INTO admins (usuario, hash_pass) VALUES (?,?)");
                                   $stmt->bind_param("ss", $usuario, $hashed_password);
                                   

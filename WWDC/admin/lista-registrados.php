@@ -62,13 +62,16 @@ include_once 'templates/header.php'; ?>
                  while( $registrado = $resultado->fetch_assoc() ) { ?>
                     <tr>
                             <td>
-                                <?php echo $registrado['nombre_registrado'] . " " . $registrado['apellido_registrado']; 
-                                      $pagado = $registrado['pagado'];
-                                      if($pagado):
-                                           echo '<span class="badge bg-green">Pagado</span>';
-                                      else:
-                                            echo '<span class="badge bg-red">No Pagado</span>';
-                                      endif;                                      
+                                <?php 
+                                  $pagado = $registrado['pagado'];
+                                    if($pagado):
+                                        echo '<span class="badge bg-green">Pago aceptado</span>';
+                                    else:
+                                        echo '<span class="badge bg-red">Error en el pago</span>';
+                                    endif; 
+
+                                      echo " " . $registrado['nombre_registrado'] . " " . $registrado['apellido_registrado']; 
+                                                                          
                                 ?>
                             </td>
                             <td><?php echo $registrado['email_registrado']; ?></td>

@@ -21,7 +21,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1 class="text-center">
-        Añadir Asistente
+        Añadir nuevo usuario
         <small>Utilice el formulario para el registro manual</small>
       </h1>
 
@@ -134,11 +134,7 @@
                                                             }
                                                             $eventos = $resultado->fetch_assoc();
 
-                                                            /*
-                                                                echo "<pre>";
-                                                                var_dump($eventos);
-                                                                echo "</pre>";
-                                                            */
+                                                        
                                                             
                                                             $eventos_dias = array();
                                                             while($eventos = $resultado->fetch_assoc()) {

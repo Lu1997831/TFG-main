@@ -125,12 +125,12 @@
                   <ul class="lista-precios clearfix">
                       <li>
                             <div class="tabla-precio">
-                                <h3>Pase por día</h3>
+                                <h3>Pase por día (martes)</h3>
                                 <p class="numero">30€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                    <li>Acceso limitado</li>
+                                    <li>Acceso a los talleres</li>
+                                    <li>Acceso limitado a las conferencias</li>
                                 </ul>
                                 <a href="#" class="button hollow">Comprar</a>
                             </div>
@@ -140,9 +140,9 @@
                                 <h3>Todos los días</h3>
                                 <p class="numero">50€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                    <li>Acceso Premium</li>
+                                    <li>Acceso rápido sin esperas</li>
+                                    <li>Acceso a todo el pabellón</li>
                                 </ul>
                                 <a href="#" class="button">Comprar</a>
                             </div>
@@ -150,12 +150,12 @@
 
                       <li>
                             <div class="tabla-precio">
-                                <h3>Pase por 2 días</h3>
+                                <h3>Pase por 2 días (lunes y viernes)</h3>
                                 <p class="numero">45€</p>
                                 <ul>
-                                  <li>Bocadillos Gratis</li>
-                                  <li>Todas las conferencias</li>
-                                  <li>Todos los talleres</li>
+                                    <li>Acceso limitado</li>
+                                    <li>Acceso a todos los talleres</li>
+                                    <li>Acceso limitado a las conferencias</li>
                                 </ul>
                                 <a href="#" class="button hollow">Comprar</a>
                             </div>

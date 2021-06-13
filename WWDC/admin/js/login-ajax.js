@@ -15,7 +15,7 @@ $(document).ready(function() {
                 if (resultado.resultado == 'exito') {
                     swal(
                         '¡Listo!',
-                        'El administrador <h3>' + resultado.usuario + '</h3> ha iniciado sesión correctamente',
+                        'El administrador <b><i>' + resultado.usuario + '</b></i> ha iniciado sesión correctamente',
                         'success'
                     )
                     setTimeout(function() {

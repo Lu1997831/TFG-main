@@ -44,7 +44,7 @@
                                 <p class="numero">50€</p>
                                 <ul>
                                   <li>Acceso Premium</li>
-                                  <li>Rápido acceso sin esperas</li>
+                                  <li>Acceso rápido sin esperas</li>
                                   <li>Acceso a todo el pabellón</li>
                                 </ul>
                                 <div class="orden">
@@ -173,6 +173,10 @@
                                   <p>Total:</p>
                                   <div id="suma-total">
                                     
+                                  </div>
+                                  <div id="form_tarjeta">
+                                  <p>hola</p>
+                                
                                   </div>
                                   <input type="hidden" name="total_pedido" id="total_pedido">
                                   <input type="hidden" name="total_descuento" id="total_descuento" value="total_descuento">

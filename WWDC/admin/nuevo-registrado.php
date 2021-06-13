@@ -116,11 +116,7 @@
                                                             }
                                                             $eventos = $resultado->fetch_assoc();
 
-                                                            /*
-                                                                echo "<pre>";
-                                                                var_dump($eventos);
-                                                                echo "</pre>";
-                                                            */
+                                                           
                                                             
                                                             $eventos_dias = array();
                                                             while($eventos = $resultado->fetch_assoc()) {
