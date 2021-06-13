@@ -119,6 +119,8 @@
                     if (cantEtiquetas >= 1) {
                         listadoProductos.push(cantEtiquetas + ' Etiquetas');
                     }
+
+
                     lista_productos.style.display = "block";
                     lista_productos.innerHTML = '';
                     for (var i = 0; i < listadoProductos.length; i++) {
@@ -128,8 +130,7 @@
 
                     botonRegistro.disabled = false;
                     document.getElementById('total_pedido').value = totalPagar;
-                    var tarjeta = document.getElementById('form_tarjeta');
-                    console.log(tarjeta);
+
 
                 }
             }

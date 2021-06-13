@@ -172,16 +172,21 @@
                                   </div>
                                   <p>Total:</p>
                                   <div id="suma-total">
-                                    
                                   </div>
-                                  <div id="form_tarjeta">
-                                  <p>hola</p>
-                                
-                                  </div>
+                                 
                                   <input type="hidden" name="total_pedido" id="total_pedido">
                                   <input type="hidden" name="total_descuento" id="total_descuento" value="total_descuento">
+                                  
                                   <input id="btnRegistro" type="submit" name="submit" class="button" value="Pagar">
+                                  <img src="img/paypal.png" alt="" width="200px" high="100px" >
+                                  <img src="img/applepay.png" alt="" width="200px" high="100px">
+
                               </div> <!--.total-->
+
+                              
+
+
+
                         </div><!--.caja-->
                      </div> <!--#resumen-->
                 
