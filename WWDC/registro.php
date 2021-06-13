@@ -179,7 +179,7 @@
                                   
                                   <input id="btnRegistro" type="submit" name="submit" class="button" value="Pagar">
                                   <img src="img/paypal.png" alt="" width="200px" high="100px" >
-                                  <img src="img/applepay.png" alt="" width="200px" high="100px">
+                                  <img src="images/apple_pay.png" alt="" width="200px" high="100px">
 
                               </div> <!--.total-->
 

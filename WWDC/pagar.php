@@ -26,6 +26,7 @@ if(isset($_POST['submit'])):
   // Pedidos
   $boletos = $_POST['boletos'];
   $numero_boletos = $boletos;
+  $pago = '1';
   
   $pedidoExtra = $_POST['pedido_extra'];
   $camisas = $_POST['pedido_extra']['camisas']['cantidad'];
@@ -38,8 +39,8 @@ if(isset($_POST['submit'])):
   $registro = eventos_json($eventos);
   try {
     require_once('includes/funciones/bd_conexion.php');
-    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado ) VALUES (?,?,?,?,?,?,?,?)");
-    $stmt->bind_param("ssssssis", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total);
+    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado, pagado) VALUES (?,?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssssssiss", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total, $pago);
     $stmt->execute();
     $ID_registro = $stmt->insert_id;
     $stmt->close();
