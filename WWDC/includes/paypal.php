@@ -3,7 +3,7 @@
 
 require 'paypal/autoload.php';
 
-define('URL_SITIO', 'http://localhost:8888/TFG_main/wwdc');
+define('URL_SITIO', 'http://localhost/TFG/TFG-main/WWDC/');
 
 $apiContext = new \PayPal\Rest\ApiContext(
       new \PayPal\Auth\OAuthTokenCredential(

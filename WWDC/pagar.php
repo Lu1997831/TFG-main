@@ -26,7 +26,6 @@ if(isset($_POST['submit'])):
   // Pedidos
   $boletos = $_POST['boletos'];
   $numero_boletos = $boletos;
-  $pago = '1';
   
   $pedidoExtra = $_POST['pedido_extra'];
   $camisas = $_POST['pedido_extra']['camisas']['cantidad'];
@@ -39,8 +38,8 @@ if(isset($_POST['submit'])):
   $registro = eventos_json($eventos);
   try {
     require_once('includes/funciones/bd_conexion.php');
-    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado, pagado) VALUES (?,?,?,?,?,?,?,?,?)");
-    $stmt->bind_param("ssssssiss", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total, $pago);
+    $stmt = $conn->prepare("INSERT INTO registrados (nombre_registrado, apellido_registrado, email_registrado, fecha_registro, pases_articulos, talleres_registrados, regalo, total_pagado) VALUES (?,?,?,?,?,?,?,?)");
+    $stmt->bind_param("ssssssis", $nombre, $apellido, $email, $fecha, $pedido, $registro, $regalo, $total);
     $stmt->execute();
     $ID_registro = $stmt->insert_id;
     $stmt->close();
@@ -115,8 +114,8 @@ $transaccion->setAmount($cantidad)
             ->setInvoiceNumber($ID_registro);
             
 $redireccionar = new RedirectUrls();
-$redireccionar->setReturnUrl(URL_SITIO . "/pago_finalizado.php?&id_pago={$ID_registro}")
-              ->setCancelUrl(URL_SITIO . "/pago_finalizado.php?&id_pago={$ID_registro}");
+$redireccionar->setReturnUrl(URL_SITIO . "/pago_finalizado.php?&exito=true&id_pago={$ID_registro}")
+              ->setCancelUrl(URL_SITIO . "/pago_finalizado.php?&exito=false&id_pago={$ID_registro}");
           
 
 $pago = new Payment();
