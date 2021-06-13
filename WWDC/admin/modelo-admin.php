@@ -7,9 +7,9 @@ if($_POST['registro'] == 'nuevo') {
     $usuario = $_POST['usuario'];
     $password = $_POST['password'];
     
-    if(strlen($usuario) < 5):
+    if(strlen($usuario) < 5){
           echo "El nombre de usuario debe ser más largo";
-    else:
+    }else{
             
             $opciones = array(
               'cost' => 12
@@ -38,9 +38,13 @@ if($_POST['registro'] == 'nuevo') {
               echo "Error:" . $e->getMessage();
             }
 
-    die(json_encode($respuesta));
-}
-/*
+        }
+        die(json_encode($respuesta));
+        }
+        
+
+        
+
 if($_POST['registro'] == 'actualizar') {
 
     $id_registro = $_POST['id_registro'];
@@ -116,4 +120,6 @@ if($_POST['registro'] == 'eliminar'){
     }
 
     die(json_encode($respuesta));
-}*/
+}
+
+?>

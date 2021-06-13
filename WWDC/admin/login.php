@@ -10,7 +10,7 @@
 <div class="login-box">
 
       <div class="login-logo">
-            <a href="../index.php"><b>WWDC</b> Login</a>
+            <a href="../index.php">Panel de Administración <b>WWDC</b></a>
       </div>
 
       <!-- /.login-logo -->
@@ -19,11 +19,11 @@
 
             <form id="login" method="post" action="login-admin.php">
                   <div class="form-group has-feedback">
-                    <input type="text" name="usuario" class="form-control" placeholder="Login">
+                    <input type="text" name="usuario" class="form-control" placeholder="Usuario">
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                   </div>
                   <div class="form-group has-feedback">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" class="form-control" placeholder="Contraseña">
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                   </div>
                   <div class="row">

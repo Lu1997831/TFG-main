@@ -58,6 +58,10 @@
                     echo "</div>";
             }
                 
+            $url = "index.php";
+            $sec = 2;
+
+            header("Refresh: $sec; url=$url");
                 ?>
     
   

@@ -44,7 +44,7 @@ if(isset($_POST['submit'])):
     $ID_registro = $stmt->insert_id;
     $stmt->close();
     $conn->close();
-    header('Location: validar_registro.php?exitoso=1');
+    //header('Location: validar_registro.php?exitoso=1');
   } catch (Exception $e) {
     $error = $e->getMessage();
   }

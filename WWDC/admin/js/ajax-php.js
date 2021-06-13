@@ -93,16 +93,16 @@ $(document).ready(function() {
                     var resultado = JSON.parse(data);
                     if (resultado.respuesta == "correcto") {
                         swal(
-                            'Eliminado!',
-                            'Your file has been deleted.',
+                            'Confirmado',
+                            'El registro ha sido eliminado',
                             'success'
                         );
                         console.log(data);
                         jQuery("[data-id='" + resultado.id_eliminado + "'").parents('tr').remove();
                     } else {
                         swal(
-                            'Error!',
-                            'No se pudo eliminar, intente de nuevo.',
+                            'Error',
+                            'No se ha podido eliminar, inténtelo más tarde.',
                             'error'
                         )
                     }

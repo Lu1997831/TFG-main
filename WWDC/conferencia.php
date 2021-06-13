@@ -1,7 +1,7 @@
 <?php include_once 'includes/templates/header.php'; ?>
 
         <section class="seccion contenedor">
-            <h2>La mejor conferencia  de diseño web en español</h2>
+            <h2>La mayor conferencia de desarrolladores</h2>
             <p>Los mejores programas tienen una curva de aprendizaje rápida, un precio asequible e incluyen herramientas necesarias para realizar reuniones productivas. Para ayudarte a encontrar la correcta, indagamos en estas opciones, teniendo en cuenta factores como el precio, la experiencia de usuario y la cantidad de participantes permitidos en cada reunión.
             </p>
         </section> <!--seccion-->

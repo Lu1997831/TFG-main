@@ -45,7 +45,7 @@ use PayPal\Api\ShippingAddress;
                     "type": "visa",
                     "number": "4417119669820331",
                     "expire_month": "12",
-                    "expire_year": "2017",
+                    "expire_year": "2025",
                     "cvv2": "128"
                 }
             }
@@ -74,7 +74,7 @@ $card = new CreditCard();
 $card->setType('visa')
     ->setNumber('4491759698858890')
     ->setExpireMonth('12')
-    ->setExpireYear('2017')
+    ->setExpireYear('2025')
     ->setCvv2('128');
 
 $fundingInstrument = new FundingInstrument();

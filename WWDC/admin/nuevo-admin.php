@@ -35,7 +35,7 @@
                             </div>
                             <!-- /.box-header -->
                                 <!-- form start -->
-                                <form role="form" id="guardar-registro" action="nuevo-admin.php" method="post">
+                                <form role="form" id="guardar-registro" action="modelo-admin.php" method="post">
                                     <div class="box-body">
                                             <div class="form-group">
                                                 <label for="nombre_admin">Nombre del Administrador</label>
