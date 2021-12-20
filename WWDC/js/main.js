@@ -258,7 +258,7 @@
 
         //Cuenta Regresiva
 
-        $('.cuenta-regresiva').countdown('2021/06/15 17:30:00', function(event) {
+        $('.cuenta-regresiva').countdown('2050/06/15 17:30:00', function(event) {
             $('#dias').html(event.strftime('%D'));
             $('#horas').html(event.strftime('%H'));
             $('#minutos').html(event.strftime('%M'));
